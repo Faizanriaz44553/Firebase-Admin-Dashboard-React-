@@ -1,0 +1,48 @@
+.styled-form {
+  background-color: var(--white-color); /* Form background remains white */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.styled-form input[type="email"],
+.styled-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-size: 16px;
+}
+
+.styled-form input[type="submit"] {
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--black-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styled-form input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+.styled-form .error-msg {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.styled-form input::placeholder {
+  color: var(--black-color);
+}
